@@ -54,6 +54,9 @@ sudo mkdir /usr/include/samtools
 
 ## Install Perl modules
 
+* DateTime
+* 
+
 * Net::FTP::Robust
 * Filesys::DfPortable
 * Filesys::DiskUsage
