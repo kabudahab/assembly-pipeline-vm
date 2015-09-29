@@ -52,9 +52,16 @@ sudo mkdir /usr/include/samtools
 ```
 
 
-## install Perl modules
+## Install Perl modules
 
 * Net::FTP::Robust
+* Filesys::DfPortable
+* Filesys::DiskUsage
+* File::Rsync
+* Time::Format
+* IO::Capture::Stderr
+* DBI
+
 
 # Install files
 
