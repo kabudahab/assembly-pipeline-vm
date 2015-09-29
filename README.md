@@ -2,7 +2,7 @@
 
 # Install dependencies
 
-## Install Perl 5
+## Perl 5
 
 Check is Perl is already installed by running the follwoing command in termial:
 
@@ -15,6 +15,46 @@ The previous command should return the path of the perl execuable in case perl i
 ```bash
    sudo apt-get install perl
 ```
+
+## Samtools
+
+1. Install required packages by running the following command in terminal:
+```
+sudo apt-get install zlib1g-dev libncurses5-dev
+```
+2. Download Samtools from https://github.com/samtools/samtools (e.g. https://github.com/samtools/samtools/archive/1.1.zip)
+3. Extract the downloaded samtools ZIP file to ~/Downloads/samtools-1.1
+4. Download HTSlib from https://codeload.github.com/samtools/htslib/zip/1.1
+5. Extract htslib-1.1.zip to  ~/Downloads/samtools-1.1
+6. Open the file ~/Downloads/samtools-1.1/MAKEFILE in a text editor (e.g. gedit)
+7. Edit line number 85 so it points to the folder where you extarcted htslib-1.1.zip
+```
+# Adjust $(HTSDIR) to point to your top-level htslib directory
+HTSDIR = /home/ubuntu/Downloads/samtools-1.1/htslib-1.1
+include $(HTSDIR)/htslib.mk
+HTSLIB = $(HTSDIR)/libhts.a
+BGZIP  = $(HTSDIR)/bgzip
+'''
+8. Run the following commands in terminal:
+```
+cd ~/Downloads/samtools-1.1
+make
+sudo make install
+```
+9. Verify that samtools has been installed by running the following command in terminal:
+```
+which samtools
+```
+6. Copy samtools header files by running the following command in terminal:
+7. ```
+sudo mkdir /usr/include/samtools
+
+```
+
+
+## install Perl modules
+
+* Net::FTP::Robust
 
 # Install files
 
