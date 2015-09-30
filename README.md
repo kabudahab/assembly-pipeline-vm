@@ -73,7 +73,13 @@ sudo mkdir /usr/include/samtools
 * DBI
 
 
-# Install files
+## Install 
+
+1. Install awk command by running the following command in terminal:
+```
+sudo apt-get install gawk 
+```
+
 
 ## Download Perl modules
 
