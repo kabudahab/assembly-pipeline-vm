@@ -30,13 +30,11 @@ The steps given here show how to install the genome assembly pipeline (developed
 This pipeline requires the following software to be installed:
 * Samtools,
 * velvet, 
-* prokka, 
 * smalt, 
 * SSPACE, 
 * SGA, 
-* khmer, 
-* QUASR, 
-* and GapFiller 
+* khmer, and
+* QUASR
 
 This can be done either manually by installing them from their original software repositories, or
 alternativally you can download and install a bundle of all of the required bioinformatics software as follows:
