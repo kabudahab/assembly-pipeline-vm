@@ -98,7 +98,36 @@ alternativally you can download and install a bundle of all of the required bioi
     ./Build installdeps
     cpan Inline Inline::C Inline::Filters Bio::AssemblyImprovement::Scaffold::Descaffold
     ```
+4. To set environment variables, run the following command in termial:
 
+    ```bash
+    gedit ~/.bashrc
+    ```
+5. Scroll to the end of the file
+6. Copy the following lines
+
+    ```
+    # Add vr-codebase modules to Perl lib path environment variable
+    export PERL5LIB="$PERL5LIB:/home/ubuntu/Documents/vr-codebase/modules"
+    export PERL5LIB="$PERL5LIB:$HOME/perl5/lib/perl5"
+    ```
+
+7. Save and close the file.
+8. Reload the environment variables by running the following command in termial:
+
+    ```bash
+    source ~/.bashrc
+    ```
+9. Verify that environment variables are set by running the following command in termial:
+
+    ```bash
+    echo $PERL5LIB 
+    ```
+9. The previous command output should include the path of vr-codebase modules folder:
+
+    ```bash
+    :/home/ubuntu/Documents/vr-codebase/modules:/home/ubuntu/perl5/lib/perl5
+    ```
 
 ## Download assembly pipeline 
 
@@ -107,7 +136,7 @@ alternativally you can download and install a bundle of all of the required bioi
 3. To set environment variables, run the following command in termial:
 
     ```bash
-    gedit ~/.profile
+    gedit ~/.bashrc
     ```
 4. Scroll to the end of the file
 5. Copy the following lines
@@ -124,12 +153,12 @@ alternativally you can download and install a bundle of all of the required bioi
     ```bash
     source ~/.bashrc
     ```
-8. Verify that binary files are installed by running the following command in termial:
+8. Verify that the environment variables are set by running the following command in termial:
 
     ```bash
     which run-assembly-pipeline.pl 
     ```
-9. The previous command should output the path of each of the binary files:
+9. The previous command should output the path of the assembly pipeline wrapper script:
 
     ```bash
     /home/ubuntu/Documents/assembly-pipeline/run-assembly-pipeline.pl
