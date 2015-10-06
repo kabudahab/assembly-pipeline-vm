@@ -52,18 +52,17 @@ This pipeline requires the following software to be installed:
 * QUASR, 
 * and GapFiller 
 
-This can be done either: 
-* manually by installing them from their original software repositories, or
-* alternativally you can download and install a bundle of all of the required bioinformatics software as follows:
+This can be done either manually by installing them from their original software repositories, or
+alternativally you can download and install a bundle of all of the required bioinformatics software as follows:
 
-1. Download BioSoftware.tar.gz ().
-2. Extract the file BioSoftware.tar.gz to ~/Documents/
+1. Download BioSoftware-vol1.tar.gz () and BioSoftware-vol2.tar.gz () .
+2. Extract both files to ~/Documents/
 3. Set environment variables by running the following command in termial:
 ```bash
    gedit ~/.bashrc
 ```
 4. Scroll to the end of the file
-5. Copy the following lines
+5. Copy the following line
 ```
 export PATH="$PATH:/home/ubuntu/Documents/software/bin"
 ```
