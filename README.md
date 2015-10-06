@@ -58,17 +58,26 @@ alternativally you can download and install a bundle of all of the required bioi
 
 6. Save and close the file.
 7. Reload the environment variables by running the following command in termial:
-```bash
-   source ~/.bashrc
-```
+
+    ```bash
+    source ~/.bashrc
+    ```
 8. Verify that binary files are installed by running the following command in termial:
-```bash
-   which 
-```
-9. The previous command should output the follows:
-```bash
-    
-```
+
+    ```bash
+    which assembly_stats  bamcheck  fastqcheck  samtools  sga  smalt  velvetg  velveth 
+    ```
+9. The previous command should output the path of each of the binary files:
+    ```bash
+    /home/ubuntu/Documents/software/bin/assembly_stats
+    /home/ubuntu/Documents/software/bin/bamcheck
+    /home/ubuntu/Documents/software/bin/fastqcheck
+    /home/ubuntu/Documents/software/bin/samtools
+    /home/ubuntu/Documents/software/bin/sga
+    /home/ubuntu/Documents/software/bin/smalt
+    /home/ubuntu/Documents/software/bin/velvetg
+    /home/ubuntu/Documents/software/bin/velveth
+    ```
 
 
 ## Install vr-codebase
