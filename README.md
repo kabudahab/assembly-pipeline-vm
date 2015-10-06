@@ -2,27 +2,9 @@
 
 
 
-# Checking 
-
-Check if Perl is already installed by running the follwoing command in termial:
-```bash
-   which perl
-```
-The previous command returns the path of perl execuable in case it is already installed (e.g. `/usr/bin/perl`). 
-
-
-Check if Java is already installed by running the follwoing command in termial:
-```bash
-   which java
-```
-
-The previous command should return the path of the java execuable in case it is already installed (e.g. `/usr/bin/java`). If it does not return anything, then 
-
-
-
 # Installation guide
 
-The steps given here show how to install the genome assembly pipeline  (developed by the Vertebrate Resequencing group at the Sanger Institute) on a Ubuntu 12.04.03 LTS machine.
+The steps given here show how to install the genome assembly pipeline (developed by the Vertebrate Resequencing group at the Sanger Institute) on a Ubuntu 12.04.03 LTS machine.
 
 ## Install software dependencies
 
@@ -55,8 +37,8 @@ This pipeline requires the following software to be installed:
 This can be done either manually by installing them from their original software repositories, or
 alternativally you can download and install a bundle of all of the required bioinformatics software as follows:
 
-1. Download BioSoftware-vol1.tar.gz () and BioSoftware-vol2.tar.gz () .
-2. Extract both files to ~/Documents/
+1. Download `BioSoftware-vol1.tar.gz` () and `BioSoftware-vol2.tar.gz` () .
+2. Extract both files to `~/Documents/`
 3. Set environment variables by running the following command in termial:
 ```bash
    gedit ~/.bashrc
@@ -81,64 +63,7 @@ export PATH="$PATH:/home/ubuntu/Documents/software/bin"
 ```
 
 
-## Samtools
-
-1. Install required packages by running the following command in terminal:
-```
-sudo apt-get install zlib1g-dev libncurses5-dev 
-```
-2. Download Samtools from https://github.com/samtools/samtools (e.g. https://github.com/samtools/samtools/archive/1.1.zip)
-3. Extract the downloaded samtools ZIP file to ~/Downloads/samtools-1.1
-4. Download HTSlib from https://codeload.github.com/samtools/htslib/zip/1.1
-5. Extract htslib-1.1.zip to  ~/Downloads/samtools-1.1
-6. Open the file ~/Downloads/samtools-1.1/MAKEFILE in a text editor (e.g. gedit)
-7. Edit line number 85 so it points to the folder where you extarcted htslib-1.1.zip
-```
-# Adjust $(HTSDIR) to point to your top-level htslib directory
-HTSDIR = /home/ubuntu/Downloads/samtools-1.1/htslib-1.1
-include $(HTSDIR)/htslib.mk
-HTSLIB = $(HTSDIR)/libhts.a
-BGZIP  = $(HTSDIR)/bgzip
-'''
-8. Run the following commands in terminal:
-```
-cd ~/Downloads/samtools-1.1
-make
-sudo make install
-```
-9. Verify that samtools has been installed by running the following command in terminal:
-```
-which samtools
-```
-6. Copy samtools header files by running the following command in terminal:
-7. ```
-sudo mkdir /usr/include/samtools
-
-```
-
-
-## Install Perl modules
-
-* Net::FTP::Robust
-* Filesys::DfPortable
-* Filesys::DiskUsage
-* File::Rsync
-* Time::Format
-* IO::Capture::Stderr
-* DBI
-
-
-## Install 
-
-1. 
-
-
-## Download Perl modules
-
-1. Download assembly-pipeline-perl5-modules from https://github.com/...
-2. Extract to `~/perl5`
-
-## Download vr-codebase
+## Install vr-codebase
 
 1. Download vr-codebase from https://github.com/sanger-pathogens/vr-codebase/archive/master.zip
 2. Extract to `~/vr-codebase`
