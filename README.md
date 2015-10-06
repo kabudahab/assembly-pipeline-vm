@@ -132,7 +132,7 @@ alternativally you can download and install a bundle of all of the required bioi
 ## Download assembly pipeline 
 
 1. Download assembly-pipeline from https://github.com/...
-2. Extract to `~/assembly-pipeline`
+2. Extract the ZIP file to `~/assembly-pipeline`
 3. To set environment variables, run the following command in termial:
 
     ```bash
@@ -163,5 +163,10 @@ alternativally you can download and install a bundle of all of the required bioi
     ```bash
     /home/ubuntu/Documents/assembly-pipeline/run-assembly-pipeline.pl
     ```
+
+
+
+
+
 
 
