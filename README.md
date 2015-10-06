@@ -48,10 +48,15 @@ alternativally you can download and install a bundle of all of the required bioi
     ```
     
 4. Scroll to the end of the file
-5. Copy the following line
+5. Copy the following lines
 
     ```
+    # Set bioinformatics software environment variables 
     export PATH="$PATH:$HOME/Documents/software/bin"
+    export SAMTOOLS="/home/ubuntu/Documents/software/samtools/samtools-0.1.19"
+    export PICARD="/home/ubuntu/Documents/software/picard/picard-tools-1.92"
+    export G1K=""
+    export PYTHONPATH="$PYTHONPATH:/home/ubuntu/Documents/software/khmer/python"
     ```
 
 6. Save and close the file.
@@ -76,41 +81,58 @@ alternativally you can download and install a bundle of all of the required bioi
     /home/ubuntu/Documents/software/bin/smalt
     /home/ubuntu/Documents/software/bin/velvetg
     /home/ubuntu/Documents/software/bin/velveth
+    
     ```
 
 
-## Install vr-codebase
+## Install Sanger Vertebrate Resequencing codebase
 
 1. Download vr-codebase from https://github.com/sanger-pathogens/vr-codebase/archive/master.zip
 2. Extract to `~/vr-codebase`
 3. Build vr-codebase by running the following command in terminal:
-```
-cd ~/vr-codebase
-cpan DateTime
-perl Build.PL
-./Build installdeps
-cpan Inline Inline::C Inline::Filters Bio::AssemblyImprovement::Scaffold::Descaffold
-```
+
+    ```
+    cd ~/vr-codebase
+    cpan DateTime
+    perl Build.PL
+    ./Build installdeps
+    cpan Inline Inline::C Inline::Filters Bio::AssemblyImprovement::Scaffold::Descaffold
+    ```
 
 
-## Download assembly pipeline wrapper
+## Download assembly pipeline 
 
-1. Download assembly-pipeline-wrapper from https://github.com/...
-2. Extract to `~/assembly-pipeline-wrapper`
+1. Download assembly-pipeline from https://github.com/...
+2. Extract to `~/assembly-pipeline`
+3. To set environment variables, run the following command in termial:
 
+    ```bash
+    gedit ~/.profile
+    ```
+4. Scroll to the end of the file
+5. Copy the following lines
 
-## Set environment variables
+    ```
+    # Add assembly pipeline to PATH environment variable
+    export PATH="$PATH:$HOME/Documents/assembly-pipeline"
+    
+    ```
 
-1. Run the following command in termial:
-```bash
-   gedit ~/.profile
-```
-2. Scroll to the end of the file
-3. Copy the following lines
-```
-export PATH="$PATH:$HOME/Documents/assembly-pipeline-wrapper"
-export PATH="$PATH:$HOME/Documents/assembly-pipeline-wrapper/software/pathogen/external/apps/usr/bin"
-export PATH="$PATH:$HOME/Documents/assembly-pipeline-wrapper/software/pathogen/external/apps/usr/local/bin"
-export PATH="$PATH:$HOME/Documents/assembly-pipeline-wrapper/software/pathogen/internal/prod/bin"
-```
+6. Save and close the file.
+7. Reload the environment variables by running the following command in termial:
+
+    ```bash
+    source ~/.bashrc
+    ```
+8. Verify that binary files are installed by running the following command in termial:
+
+    ```bash
+    which run-assembly-pipeline.pl 
+    ```
+9. The previous command should output the path of each of the binary files:
+
+    ```bash
+    /home/ubuntu/Documents/assembly-pipeline/run-assembly-pipeline.pl
+    ```
+
 
