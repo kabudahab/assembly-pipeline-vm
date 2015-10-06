@@ -28,9 +28,11 @@ The steps given here show how to install the genome assembly pipeline (developed
 ## Install software dependencies
 
 1. Perl 5, run the following command in termial if Perl is not installed:
+
     ```bash
     sudo apt-get install perl
     ```
+    
 2. Java, run the following command in termial if Java is not installed:
 ```bash
    sudo apt-get install openjdk-7-jre
