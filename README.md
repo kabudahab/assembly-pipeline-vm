@@ -3,7 +3,7 @@
 
 # Installation guide
 
-The steps given here show how to install the genome assembly pipeline (developed by the Vertebrate Resequencing group at the Sanger Institute) on a Ubuntu 12.04.03 LTS machine.
+The steps given here show how to install the [genome assembly pipeline](https://github.com/sanger-pathogens/vr-codebase) (developed by the Vertebrate Resequencing group at the Sanger Institute) on a Ubuntu 12.04.03 LTS machine.
 
 ## Install software dependencies
 
