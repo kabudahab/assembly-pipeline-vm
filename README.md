@@ -1,7 +1,6 @@
 # assembly-pipeline-vm
 
 
-
 # Installation guide
 
 The steps given here show how to install the genome assembly pipeline (developed by the Vertebrate Resequencing group at the Sanger Institute) on a Ubuntu 12.04.03 LTS machine.
@@ -9,9 +8,9 @@ The steps given here show how to install the genome assembly pipeline (developed
 ## Install software dependencies
 
 1. Perl 5, run the following command in termial if Perl is not installed:
-```bash
-   sudo apt-get install perl
-```
+    ```bash
+    sudo apt-get install perl
+    ```
 2. Java, run the following command in termial if Java is not installed:
 ```bash
    sudo apt-get install openjdk-7-jre
