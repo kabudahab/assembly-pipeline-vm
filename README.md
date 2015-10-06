@@ -1,25 +1,5 @@
 # assembly-pipeline-vm
 
-## Fenced code blocks inside ordered and unordered lists
-
-1. This is a numbered list.
-2. I'm going to include a fenced code block as part of this bullet:
-
-    ```
-    Code
-    More Code
-    ```
-
-3. We can put fenced code blocks inside nested bullets, too.
-   1. Like this:
-
-        ```c
-        printf("Hello, World!");
-        ```
-
-   2. The key is to indent your fenced block by **(4 * bullet_indent_level)** spaces.
-   3. Also need to put a separating newline above and below the fenced block.
-
 
 # Installation guide
 
@@ -34,13 +14,16 @@ The steps given here show how to install the genome assembly pipeline (developed
     ```
     
 2. Java, run the following command in termial if Java is not installed:
-```bash
-   sudo apt-get install openjdk-7-jre
-```
+
+    ```bash
+    sudo apt-get install openjdk-7-jre
+    ```
+    
 3. Install awk command by running the following command in terminal:
-```
-sudo apt-get install gawk 
-```
+
+    ```
+    sudo apt-get install gawk 
+    ```
 
 ## Install bioinformatics software
 
@@ -61,14 +44,18 @@ alternativally you can download and install a bundle of all of the required bioi
 1. Download `BioSoftware-vol1.tar.gz` () and `BioSoftware-vol2.tar.gz` () .
 2. Extract both files to `~/Documents/`
 3. Set environment variables by running the following command in termial:
-```bash
+
+    ```bash
    gedit ~/.bashrc
-```
+    ```
+    
 4. Scroll to the end of the file
 5. Copy the following line
-```
-export PATH="$PATH:/home/ubuntu/Documents/software/bin"
-```
+
+    ```
+    export PATH="$PATH:/home/ubuntu/Documents/software/bin"
+    ```
+
 6. Save and close the file.
 7. Reload the environment variables by running the following command in termial:
 ```bash
