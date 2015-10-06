@@ -11,6 +11,14 @@ Check if Perl is already installed by running the follwoing command in termial:
 The previous command returns the path of perl execuable in case it is already installed (e.g. `/usr/bin/perl`). 
 
 
+Check if Java is already installed by running the follwoing command in termial:
+```bash
+   which java
+```
+
+The previous command should return the path of the java execuable in case it is already installed (e.g. `/usr/bin/java`). If it does not return anything, then 
+
+
 
 # Installation guide
 
@@ -33,9 +41,20 @@ sudo apt-get install gawk
 
 ## Install bioinformatics software
 
-This pipeline requires velvet, prokka, smalt, SSPACE, SGA, khmer, QUASR, and GapFiller to be installed.
-This can be done manually by installing them from their original software repositories,
-or alternativally you can download and install a bundle of all of the required bioinformatics software as follows:
+This pipeline requires the following software to be installed:
+* Samtools,
+* velvet, 
+* prokka, 
+* smalt, 
+* SSPACE, 
+* SGA, 
+* khmer, 
+* QUASR, 
+* and GapFiller 
+
+This can be done either: 
+* manually by installing them from their original software repositories, or
+* alternativally you can download and install a bundle of all of the required bioinformatics software as follows:
 
 1. Download BioSoftware.tar.gz ().
 2. Extract the file BioSoftware.tar.gz to ~/Documents/
@@ -57,15 +76,11 @@ export PATH="$PATH:/home/ubuntu/Documents/software/bin"
 ```bash
    which 
 ```
-
-## Java
-
-Check if Java is already installed by running the follwoing command in termial:
+9. The previous command should output the follows:
 ```bash
-   which java
+    
 ```
 
-The previous command should return the path of the java execuable in case it is already installed (e.g. `/usr/bin/java`). If it does not return anything, then 
 
 ## Samtools
 
