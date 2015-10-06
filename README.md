@@ -66,6 +66,7 @@ alternativally you can download and install a bundle of all of the required bioi
     which assembly_stats  bamcheck  fastqcheck  samtools  sga  smalt  velvetg  velveth 
     ```
 9. The previous command should output the path of each of the binary files:
+
     ```bash
     /home/ubuntu/Documents/software/bin/assembly_stats
     /home/ubuntu/Documents/software/bin/bamcheck
