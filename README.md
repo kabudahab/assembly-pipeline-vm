@@ -51,7 +51,7 @@ alternativally you can download and install a bundle of all of the required bioi
 5. Copy the following line
 
     ```
-    export PATH="$PATH:/home/ubuntu/Documents/software/bin"
+    export PATH="$PATH:$HOME/Documents/software/bin"
     ```
 
 6. Save and close the file.
