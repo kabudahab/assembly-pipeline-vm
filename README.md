@@ -107,6 +107,8 @@ alternativally you can download and install a bundle of all of the required bioi
 6. Copy the following lines
 
     ```
+    # Add vr-codebase scripts to PATH environment variable
+    export PATH="$PATH:/home/ubuntu/Documents/vr-codebase/scripts"
     # Add vr-codebase modules to Perl lib path environment variable
     export PERL5LIB="$PERL5LIB:/home/ubuntu/Documents/vr-codebase/modules"
     export PERL5LIB="$PERL5LIB:$HOME/perl5/lib/perl5"
