@@ -24,6 +24,13 @@ The steps given here show how to install the [genome assembly pipeline](https://
     ```
     sudo apt-get install gawk 
     ```
+    
+4. Install gnuplot command by running the following command in terminal:
+
+    ```
+    sudo apt-get install gnuplot 
+    ```
+    
 
 ## Install bioinformatics software
 
