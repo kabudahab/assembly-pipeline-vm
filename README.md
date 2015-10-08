@@ -57,6 +57,7 @@ alternativally you can download and install a bundle of all of the required bioi
     export PICARD="/home/ubuntu/Documents/software/picard/picard-tools-1.92"
     export G1K=""
     export PYTHONPATH="$PYTHONPATH:/home/ubuntu/Documents/software/khmer/python"
+    
     ```
 
 6. Save and close the file.
@@ -109,9 +110,11 @@ alternativally you can download and install a bundle of all of the required bioi
     ```
     # Add vr-codebase scripts to PATH environment variable
     export PATH="$PATH:/home/ubuntu/Documents/vr-codebase/scripts"
+    
     # Add vr-codebase modules to Perl lib path environment variable
     export PERL5LIB="$PERL5LIB:/home/ubuntu/Documents/vr-codebase/modules"
     export PERL5LIB="$PERL5LIB:$HOME/perl5/lib/perl5"
+    
     ```
 
 7. Save and close the file.
@@ -146,6 +149,9 @@ alternativally you can download and install a bundle of all of the required bioi
     ```
     # Add assembly pipeline to PATH environment variable
     export PATH="$PATH:$HOME/Documents/assembly-pipeline"
+    
+    # Add assembly pipeline to Perl lib path environment variable
+    export PERL5LIB="$PERL5LIB:$HOME/Documents/assembly-pipeline"
     
     ```
 
