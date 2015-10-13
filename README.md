@@ -19,13 +19,13 @@ The steps given here show how to install the [genome assembly pipeline](https://
     sudo apt-get install openjdk-7-jre
     ```
     
-3. Install awk command by running the following command in terminal:
+3. Install awk package by running the following command in terminal:
 
     ```
     sudo apt-get install gawk 
     ```
     
-4. Install gnuplot command by running the following command in terminal:
+4. Install gnuplot package by running the following command in terminal:
 
     ```
     sudo apt-get install gnuplot 
