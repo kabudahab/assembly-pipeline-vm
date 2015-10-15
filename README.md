@@ -106,7 +106,11 @@ alternativally you can download and install a bundle of all of the required bioi
     cpan DBI
     perl Build.PL
     ./Build installdeps
-    cpan Inline Inline::C Inline::Filters Bio::AssemblyImprovement::Scaffold::Descaffold
+    cpan Inline 
+    cpan Inline::C 
+    cpan -f Inline::C
+    cpan Inline::Filters 
+    cpan Bio::AssemblyImprovement::Scaffold::Descaffold
     ```
 4. To set environment variables, run the following command in termial:
 
