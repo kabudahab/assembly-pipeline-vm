@@ -96,12 +96,14 @@ alternativally you can download and install a bundle of all of the required bioi
 ## Install Sanger Vertebrate Resequencing codebase
 
 1. Download vr-codebase from [https://github.com/sanger-pathogens/vr-codebase/archive/master.zip](https://github.com/sanger-pathogens/vr-codebase/archive/master.zip)
-2. Extract the ZIP file to `~/vr-codebase`
+2. Extract the ZIP file to `~/Documents/vr-codebase`
 3. Build vr-codebase by running the following command in terminal:
 
     ```
-    cd ~/vr-codebase
+    cd ~/Documents/vr-codebase
     cpan DateTime
+    cpan DateTime
+    cpan DBI
     perl Build.PL
     ./Build installdeps
     cpan Inline Inline::C Inline::Filters Bio::AssemblyImprovement::Scaffold::Descaffold
