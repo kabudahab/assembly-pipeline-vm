@@ -31,7 +31,7 @@ The steps given here show how to install the [genome assembly pipeline](https://
     sudo apt-get install gnuplot 
     ```
     
-4. Install gnuplot package by running the following command in terminal:
+5. Install samtools dependencies by running the following command in terminal:
 
     ```
     sudo apt-get install zlib1g-dev libncurses5-dev 
