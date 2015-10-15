@@ -105,6 +105,7 @@ alternativally you can download and install a bundle of all of the required bioi
 3. Build vr-codebase by running the following command in terminal:
 
     ```
+    cpan
     cd ~/Documents/vr-codebase
     cpan DateTime
     cpan DateTime
