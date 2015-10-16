@@ -160,7 +160,7 @@ alternativally you can download and install a bundle of all of the required bioi
     :/home/ubuntu/Documents/vr-codebase/modules:/home/ubuntu/perl5/lib/perl5
     ```
 
-## Download assembly pipeline 
+## Download and install assembly pipeline 
 
 1. Download assembly-pipeline from https://github.com/...
 2. Extract the ZIP file to `~/assembly-pipeline`
@@ -198,6 +198,14 @@ alternativally you can download and install a bundle of all of the required bioi
     /home/ubuntu/Documents/assembly-pipeline/run-assembly-pipeline.pl
     ```
 
+## Download and install libhpc-cf
+
+
+## Run a test assembly job
+
+```bash
+   python ~/Documents/libhpc-cf/AssemblyPipeline.py -n ERR594560 -f /home/ubuntu/Documents/assembly-jobs/job-0
+```
 
 
 
