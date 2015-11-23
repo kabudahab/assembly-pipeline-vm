@@ -107,7 +107,7 @@ alternativally you can download and install a bundle of all of the required bioi
 
 ## Install Sanger Vertebrate Resequencing codebase
 
-1. Download vr-codebase from [https://github.com/sanger-pathogens/vr-codebase/archive/master.zip](https://github.com/sanger-pathogens/vr-codebase/archive/master.zip)
+1. Download vr-codebase from [https://github.com/ImperialCollegeLondon/vr-codebase/](https://github.com/ImperialCollegeLondon/vr-codebase/archive/master.zip)
 2. Extract the ZIP file to `~/Documents/vr-codebase`
 3. Build vr-codebase by running the following command in terminal:
 
@@ -162,7 +162,7 @@ alternativally you can download and install a bundle of all of the required bioi
 
 ## Download and install assembly pipeline 
 
-1. Download assembly-pipeline from https://github.com/...
+1. Download assembly-pipeline from  [https://github.com/ImperialCollegeLondon/assembly-pipeline-wrapper/archive/master.zip](https://github.com/ImperialCollegeLondon/assembly-pipeline-wrapper/archive/master.zip)
 2. Extract the ZIP file to `~/assembly-pipeline`
 3. To set environment variables, run the following command in termial:
 
